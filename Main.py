@@ -16,8 +16,8 @@ def merge_sort(data):
             else:
                 data[k]=righthalf[j]
                 j=j+1
-                k=k+1
-                
+            k=k+1
+
         while i < len(lefthalf):
             data[k]=lefthalf[i]
             i=i+1
@@ -25,11 +25,8 @@ def merge_sort(data):
 
         while j < len(righthalf):
             data[k]=righthalf[j]
-              j=j+1
-              k=k+1
-
-          
- 
+            j=j+1
+            k=k+1
 
 
 # Do not change the following code
@@ -42,4 +39,3 @@ for item in input_data.split(', '):
     data.append(int(item))
 merge_sort(data)
 print(data)
-
